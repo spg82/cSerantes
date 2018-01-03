@@ -1,0 +1,11 @@
+<div class="text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" routerLinkActive="active" [routerLink]="['finishes']">Acabados</button>
+        <button type="button" class="btn btn-secondary" routerLinkActive="active" [routerLink]="['closures']">Cierres</button>
+        <button type="button" class="btn btn-secondary" routerLinkActive="active" [routerLink]="['covering']">Cubiertas</button>
+        <button type="button" class="btn btn-secondary" routerLinkActive="active" [routerLink]="['frontages']">Fachadas</button>
+    </div>
+</div>
+<div class="container gallery-container">
+    <router-outlet></router-outlet>
+</div>
