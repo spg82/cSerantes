@@ -2,23 +2,23 @@
 	<h3 class="page-title text-center">Contacto</h3>
 	<hr>
 	<br>
-	<div class="form-container">
-	  	<h1>Contacte con nosotros</h1>
+	<form class="form-container col-sm-8 offset-sm-2" #form="ngForm" ngNativeValidate (ngSubmit)="send(form.value)" style="border: 9px solid #f2f2f2; max-width: 520px; margin: auto; padding: 5%;">
+		<div class="form-group">
+			<label for="inputName">Nombre</label>
+			<input type="text" name="name" class="form-control" id="inputName" aria-describedby="name" required [(ngModel)]="form_data.name">
+		</div>
+		<div class="form-group">
+			<label for="inputEmail">Email</label>
+			<input type="text" name="email" class="form-control" id="inputEmail" aria-describedby="email" required [(ngModel)]="form_data.email">
+		</div>
+		<div class="form-group">
+			<label for="comments">Mensaje</label>
+			<textarea name="comments" class="form-control" id="comments" rows="3" [(ngModel)]="form_data.comments" required></textarea>
+		</div>
 		<br>
-		<form  method="post" id="reused_form" >
-			<label for="name">Nombre</label>
-			<input id="name" type="text" name="Name" required maxlength="50">
-
-			<label for="email">Email</label>
-			<input id="email" type="email" name="Email" required maxlength="50">
-
-			<label for="message">Mensaje</label>
-			<textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
-			<br>
-			<br>
-			<button class="btn btn-primary" type="" >Enviar</button>
-		</form>
-	</div>
+		<br>
+		<button [disabled]="!form.valid" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Enviar </button>
+	</form>	
 	<br>
 	<div class="text-center">
 		<h3>Email: miguelsobrinsueiras@gmail.com</h3>
@@ -26,3 +26,22 @@
 		<h3>Teléfono: 659 317 805</h3>
 	</div>
 </div>
+
+<!-- Modal window to show success/error message -->
+<div class="modal fade" id="myModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{ modal_title }}</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color: black">{{ modal_message }}</p>
+      </div>
+      <div class="modal-footer">
+        <button (click)="close_dialog()" type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
