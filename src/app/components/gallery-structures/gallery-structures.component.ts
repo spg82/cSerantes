@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryStructuresComponent implements OnInit {
 
+	constructor() { }
+
+	ngOnInit() {
+	}
+
   imgArr = [
     {'src': './assets/img/gallery/structures/structures1.jpg'},
     {'src': './assets/img/gallery/structures/structures2.jpg'},
@@ -20,5 +25,5 @@ export class GalleryStructuresComponent implements OnInit {
     {'src': './assets/img/gallery/structures/structures10.jpg'},
     {'src': './assets/img/gallery/structures/structures11.jpg'},
     {'src': './assets/img/gallery/structures/structures12.jpg'}
-
+   ];
 }

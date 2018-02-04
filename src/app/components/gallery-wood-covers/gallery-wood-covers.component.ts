@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryWoodCoversComponent implements OnInit {
 
+	constructor() { }
+
+	ngOnInit() {
+	}
+
   imgArr = [
     {'src': './assets/img/gallery/wood-covers/wood-covers1.jpg'},
     {'src': './assets/img/gallery/wood-covers/wood-covers2.jpg'},
@@ -20,5 +25,5 @@ export class GalleryWoodCoversComponent implements OnInit {
     {'src': './assets/img/gallery/wood-covers/wood-covers10.jpg'},
     {'src': './assets/img/gallery/wood-covers/wood-covers11.jpg'},
     {'src': './assets/img/gallery/wood-covers/wood-covers12.jpg'}
-
+   ];
 }
