@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryCoveringComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
+
+  	imgArr = [
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
+  		{'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'}]
+  	];
 
 }

@@ -6,9 +6,10 @@ import { GalleryFinishesComponent } from '../gallery-finishes/gallery-finishes.c
 import { GalleryFrontagesComponent } from '../gallery-frontages/gallery-frontages.component';
 
 export const GALLERY_ROUTES: Routes = [
+	
 	{ path: 'closures', component: GalleryClosuresComponent },
 	{ path: 'covering', component: GalleryCoveringComponent },
 	{ path: 'finishes', component: GalleryFinishesComponent },
     { path: 'frontages', component: GalleryFrontagesComponent },
-	{ path: '**', pathMatch: 'full', redirectTo: 'nuevo'},
+	{ path: '**', pathMatch: 'full', redirectTo: 'finishes'},
 ];
