@@ -74,6 +74,16 @@
     transition: 0.5s all ease;
 }
 
+.navbar-collapse{
+  margin-left: -80px !important
+}
+
+@media screen and (max-width: 992px){
+  .navbar-collapse{
+    margin-left: 0px !important
+  }
+}
+
 
 /* Shows a line below menu items on hover */
 .nav-link:hover{

@@ -17,6 +17,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { APP_ROUTING } from './app.routes';
 import { FooterComponent } from './components/footer/footer.component';
+import { GalleryWoodCoversComponent } from './components/gallery-wood-covers/gallery-wood-covers.component';
+import { GalleryStructuresComponent } from './components/gallery-structures/gallery-structures.component';
+import { GalleryInstallationsComponent } from './components/gallery-installations/gallery-installations.component';
+import { GalleryPoolsComponent } from './components/gallery-pools/gallery-pools.component';
+import { GalleryLivingsComponent } from './components/gallery-livings/gallery-livings.component';
 
 
 @NgModule({
@@ -30,7 +35,12 @@ import { FooterComponent } from './components/footer/footer.component';
     GalleryFinishesComponent,
     GalleryClosuresComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryWoodCoversComponent,
+    GalleryStructuresComponent,
+    GalleryInstallationsComponent,
+    GalleryPoolsComponent,
+    GalleryLivingsComponent
   ],
   imports: [
     BrowserModule,
