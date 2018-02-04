@@ -16,6 +16,7 @@ import { GalleryClosuresComponent } from './components/gallery-closures/gallery-
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { APP_ROUTING } from './app.routes';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { APP_ROUTING } from './app.routes';
     GalleryFrontagesComponent,
     GalleryFinishesComponent,
     GalleryClosuresComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

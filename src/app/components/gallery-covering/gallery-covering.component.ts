@@ -13,18 +13,17 @@ export class GalleryCoveringComponent implements OnInit {
 	}
 
   imgArr = [
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'}
+    {'src': './assets/img/gallery/covering/covering1.jpg'},
+    {'src': './assets/img/gallery/covering/covering2.jpg'},
+    {'src': './assets/img/gallery/covering/covering3.jpg'},
+    {'src': './assets/img/gallery/covering/covering4.jpg'},
+    {'src': './assets/img/gallery/covering/covering5.jpg'},
+    {'src': './assets/img/gallery/covering/covering6.jpg'},
+    {'src': './assets/img/gallery/covering/covering7.jpg'},
+    {'src': './assets/img/gallery/covering/covering8.jpg'},
+    {'src': './assets/img/gallery/covering/covering9.jpg'},
+    {'src': './assets/img/gallery/covering/covering10.jpg'},
+    {'src': './assets/img/gallery/covering/covering11.jpg'},
+    {'src': './assets/img/gallery/covering/covering12.jpg'}
   ];
-
 }

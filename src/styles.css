@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 .main-container{
     margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .gallery-container{
@@ -43,6 +44,10 @@
 
 .modal-backdrop {
   z-index: -1;
+}
+
+.page-title{
+  color: #397b9c;
 }
 
 /* ------------------------- END GENERAL ANIMATIONS ----------------------*/
@@ -120,13 +125,31 @@
   display: flex;
 }
 
+.custom-button{
+  color: #397b9c !important;
+  border-color: #397b9c !important;
+}
+
+.btn-group > .active{
+  color: white !important;
+  background-color: #397b9c !important;
+  border-color: #397b9c !important;
+  box-shadow: none !important;
+}
+
+.custom-button:hover{
+  color: white !important;
+  background-color: #397b9c !important;
+  border-color: #397b9c !important;
+  box-shadow: none !important;
+}
+
 div.gallery {
     padding: 10px;
     float: left;
     transform: scale(1.0);
     transition: 0.5s all ease;
-    width: 100%;
-    height: 100%;
+    width: 100%; 
 }
 
 div.gallery:hover {
@@ -135,9 +158,9 @@ div.gallery:hover {
 }
 
 div.gallery img {
-	border-radius: 2px;
+	border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: 18vw;
 }
 
 @media screen and (max-width: 768px){
@@ -179,3 +202,25 @@ textarea
 
 
 /* -------------------- END CONTACT PAGE STYLES ------------------------------ */
+
+
+/* -------------------- FOOTER PAGE STYLES ------------------------------ */
+
+.footer{
+  bottom: 0px;
+  height: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+
+  .footer {
+      font-size: 10px
+  }
+}
+
+
+/* -------------------- END FOOTER STYLES ------------------------------ */

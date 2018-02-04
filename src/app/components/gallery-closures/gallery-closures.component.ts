@@ -12,18 +12,13 @@ export class GalleryClosuresComponent implements OnInit {
 	}
 
   imgArr = [
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'}
+    {'src': './assets/img/gallery/closures/closures1.jpg'},
+    {'src': './assets/img/gallery/closures/closures2.jpg'},
+    {'src': './assets/img/gallery/closures/closures3.jpg'},
+    {'src': './assets/img/gallery/closures/closures4.jpg'},
+    {'src': './assets/img/gallery/closures/closures5.jpg'},
+    {'src': './assets/img/gallery/closures/closures6.jpg'},
+    {'src': './assets/img/gallery/closures/closures7.jpg'}
   ];
 
 }

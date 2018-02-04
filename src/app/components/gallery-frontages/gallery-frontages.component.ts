@@ -13,18 +13,12 @@ export class GalleryFrontagesComponent implements OnInit {
 	}
 
   imgArr = [
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'},
-    {'src': './assets/img/gallery/demo01.jpg', 'thumb': './assets/img/gallery/demo01-thumb.jpg'}
+    {'src': './assets/img/gallery/frontages/frontages1.jpg'},
+    {'src': './assets/img/gallery/frontages/frontages2.jpg'},
+    {'src': './assets/img/gallery/frontages/frontages3.jpg'},
+    {'src': './assets/img/gallery/frontages/frontages4.jpg'},
+    {'src': './assets/img/gallery/frontages/frontages5.jpg'},
+    {'src': './assets/img/gallery/frontages/frontages6.jpg'}
   ];
 
 }
