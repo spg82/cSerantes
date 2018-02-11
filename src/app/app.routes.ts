@@ -22,7 +22,7 @@ const APP_ROUTES: Routes = [
     { path: 'legal', component: LegalWarningComponent },
     { path: 'login', component: LoginComponent },
     { path: 'admin', component: AdminPageComponent, canActivate: [AuthGuardService] },
-    { path: 'image/add', component: AddImageComponent },
+    { path: 'image/add', component: AddImageComponent, canActivate: [AuthGuardService] },
     /* , canActivate: [AuthGuardService] */
 	{ path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];

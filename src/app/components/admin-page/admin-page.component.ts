@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImagesService } from '../../services/images.service';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-page',
@@ -11,7 +12,7 @@ export class AdminPageComponent implements OnInit {
   	images: any;
   	selectedImages = [];
 
-  	constructor(private image:ImagesService) {
+  	constructor(private image:ImagesService, private router:Router) {
   		this.images = image.getAllImages();
   	}
 
@@ -37,7 +38,7 @@ export class AdminPageComponent implements OnInit {
   	}
 
   	uploadImage(){
-  		
+  		this.router.navigate(['image/add']);
   	}
 
   	deleteImages(){
