@@ -45,8 +45,8 @@ export class ContactComponent implements OnInit {
 		      if (res.status == 200){
 		      	/* Show popup with OK message */
 		      	this.modal_status = 'OK';
-		      	this.modal_title = "Solicitud de reserva enviada con éxito";
-		      	this.modal_message = "Su solicitud ha sido de reserva ha sido enviada con éxito. Nos pondremos en contacto con usted por correo electrónico para confirmar la reserva.";
+		      	this.modal_title = "Mensaje enviado";
+		      	this.modal_message = "Su mensaje ha sido enviada con éxito. Nos pondremos en contacto con usted por correo electrónico tan pronto como nos sea posible.";
 		      	//this.showPopup(title, message);	      		      	
 		      }
 		    }, error => {
@@ -54,7 +54,7 @@ export class ContactComponent implements OnInit {
 		      /* Show error popup */
 		      this.modal_status = 'ERROR';
 		      this.modal_title = "Ha ocurrido un error";
-		      this.modal_message = "No ha sido posible enviar la solicitud. Por favor, inténtelo más tarde.";
+		      this.modal_message = "No ha sido posible enviar el mensaje. Por favor, inténtelo más tarde.";
 		      //this.showPopup(title, message);    
 		    });
 

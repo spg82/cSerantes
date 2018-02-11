@@ -5,6 +5,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { LegalWarningComponent } from './components/legal-warning/legal-warning.component';
 import { LoginComponent } from './components/login/login.component';
 import { AdminPageComponent } from './components/admin-page/admin-page.component';
+import { AddImageComponent } from './components/add-image/add-image.component';
 
 import { AuthGuardService } from './services/auth-guard.service';
 
@@ -20,7 +21,8 @@ const APP_ROUTES: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'legal', component: LegalWarningComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'admin', component: AdminPageComponent },
+    { path: 'admin', component: AdminPageComponent, canActivate: [AuthGuardService] },
+    { path: 'image/add', component: AddImageComponent },
     /* , canActivate: [AuthGuardService] */
 	{ path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];

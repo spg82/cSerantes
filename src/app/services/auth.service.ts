@@ -12,7 +12,7 @@ export class AuthService {
 	constructor(public router: Router, private af: AngularFireAuth) {
 		this.af.authState.subscribe(auth => { 
 	      	if(auth) {
-	        	this.router.navigateByUrl('/admin');
+	        	//this.router.navigateByUrl('/admin');
 			}
 		});
 	}
@@ -32,7 +32,6 @@ export class AuthService {
 	}
 
 	isAuthenticated() {
-   		
    		return this.authenticated;
   	}
 

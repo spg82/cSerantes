@@ -1,0 +1,18 @@
+<div class="col-md-6">
+	<div class="jumbotron">
+		<div>
+		      <input type="file" (change)="onChange($event)"/>
+		</div>
+		<br><br>
+		<div>
+			<label>Categoría</label><br>
+			<select [(ngModel)]="category.value">
+				<option *ngFor="let cat of categories" [value]="cat.value">{{ cat.title }}</option> 
+			</select>
+		</div>
+		<br><br>
+		<div class="col-md-8">
+			<button class="btn btn-success" (click)="uploadImage()">Subir imagen</button>
+		</div>
+	</div>
+</div>

@@ -21,4 +21,14 @@ export class ImagesService {
 		return this.images;
 	}
 
+	deleteImages(key: any){
+		for (var i=0; i<key.length; i++){
+			this.images.remove(key[i].$key);	
+		}
+	}
+
+	addImage(item: any){
+		this.images.push(item);
+	}
+
 }

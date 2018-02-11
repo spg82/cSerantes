@@ -18,6 +18,14 @@ export class AdminPageComponent implements OnInit {
   	ngOnInit() {
   	}
 
+    checkAll(){
+      this.selectedImages = this.images;
+    }
+
+    uncheckAll(){
+      this.selectedImages = [];
+    }
+
   	addImage(item){
   		for (var i=0; i<this.selectedImages.length; i++){
   			if (this.selectedImages[i].id == item.id){
@@ -25,12 +33,16 @@ export class AdminPageComponent implements OnInit {
   				return;
   			}
   		}
-  		console.log(item);
   		this.selectedImages.push(item);
   	}
 
+  	uploadImage(){
+  		
+  	}
+
   	deleteImages(){
-  		console.log(this.selectedImages);
+  		this.image.deleteImages(this.selectedImages);
+  		this.selectedImages = [];
   	}
 
 }

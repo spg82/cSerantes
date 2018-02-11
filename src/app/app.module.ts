@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MailService, IMessage } from './services/mail.service';
 import { ImagesService } from './services/images.service';
+import { ImageService } from './services/image.service';
 import { AuthService } from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
 
@@ -34,6 +35,7 @@ import { GalleryLivingsComponent } from './components/gallery-livings/gallery-li
 import { LegalWarningComponent } from './components/legal-warning/legal-warning.component';
 import { AdminPageComponent } from './components/admin-page/admin-page.component';
 import { LoginComponent } from './components/login/login.component';
+import { AddImageComponent } from './components/add-image/add-image.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCjKb8F4bT-W3vrBBaBdsK4dqgWWM0d3NM",
@@ -65,7 +67,8 @@ export const firebaseConfig = {
     LegalWarningComponent,
     ImagePipe,
     AdminPageComponent,
-    LoginComponent
+    LoginComponent,
+    AddImageComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [MailService, ImagesService, AuthService, AuthGuardService],
+  providers: [MailService, ImagesService, ImageService, AuthService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
