@@ -2,6 +2,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LegalWarningComponent } from './components/legal-warning/legal-warning.component';
+import { LoginComponent } from './components/login/login.component';
+import { AdminPageComponent } from './components/admin-page/admin-page.component';
+
+import { AuthGuardService } from './services/auth-guard.service';
 
 import { GALLERY_ROUTES } from './components/gallery/gallery.routes'
 
@@ -13,6 +18,10 @@ const APP_ROUTES: Routes = [
         children: GALLERY_ROUTES
     },
     { path: 'contact', component: ContactComponent },
+    { path: 'legal', component: LegalWarningComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'admin', component: AdminPageComponent },
+    /* , canActivate: [AuthGuardService] */
 	{ path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

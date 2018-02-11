@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MailService, IMessage } from '../../mail.service';
+import { MailService, IMessage } from '../../services/mail.service';
 
 @Component({
   selector: 'app-contact',

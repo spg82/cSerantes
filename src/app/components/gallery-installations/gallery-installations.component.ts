@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagesService } from '../../services/images.service';
+import { FirebaseListObservable } from 'angularfire2/database-deprecated';
 
 @Component({
   selector: 'app-gallery-installations',
@@ -7,19 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryInstallationsComponent implements OnInit {
 
-	constructor() { }
+  images: FirebaseListObservable<any[]>;
 
-	ngOnInit() {
-	}
+  constructor(private image:ImagesService) {
+    this.images = image.getAllImages();
+  }
 
-  imgArr = [
-    {'src': './assets/img/gallery/installations/installations1.jpg'},
-    {'src': './assets/img/gallery/installations/installations2.jpg'},
-    {'src': './assets/img/gallery/installations/installations3.jpg'},
-    {'src': './assets/img/gallery/installations/installations4.jpg'},
-    {'src': './assets/img/gallery/installations/installations5.jpg'},
-    {'src': './assets/img/gallery/installations/installations6.jpg'},
-    {'src': './assets/img/gallery/installations/installations7.jpg'}
-  ];
-
+  ngOnInit() {
+  }
 }

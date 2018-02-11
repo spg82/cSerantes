@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagesService } from '../../services/images.service';
+import { FirebaseListObservable } from 'angularfire2/database-deprecated';
 
 @Component({
   selector: 'app-gallery-closures',
@@ -6,19 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryClosuresComponent implements OnInit {
 
-	constructor() { }
+  images: FirebaseListObservable<any[]>;
 
-	ngOnInit() {
-	}
+  constructor(private image:ImagesService) {
+    this.images = image.getAllImages();
+  }
 
-  imgArr = [
-    {'src': './assets/img/gallery/closures/closures1.jpg'},
-    {'src': './assets/img/gallery/closures/closures2.jpg'},
-    {'src': './assets/img/gallery/closures/closures3.jpg'},
-    {'src': './assets/img/gallery/closures/closures4.jpg'},
-    {'src': './assets/img/gallery/closures/closures5.jpg'},
-    {'src': './assets/img/gallery/closures/closures6.jpg'},
-    {'src': './assets/img/gallery/closures/closures7.jpg'}
-  ];
-
+  ngOnInit() {
+  }
 }
