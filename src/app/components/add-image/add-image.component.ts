@@ -40,7 +40,6 @@ export class AddImageComponent implements OnInit {
   		"filename":this.files[0].name,
   		"url": url
   	}
-  	console.log(node);
   	this.image.addImage(node);
 
     this.upload.uploadFile(node).subscribe(res => {
