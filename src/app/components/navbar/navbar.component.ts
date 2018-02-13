@@ -15,22 +15,22 @@ export class NavbarComponent implements OnInit {
 	galicianFlag: string;
 	englishFlag: string;
 
-    currentLang = 'es';
+    currentLang = 'ga';
 
 
     translate: TranslateService;
 
   	constructor(translate: TranslateService) { 
       this.translate = translate;
-      this.translate.setDefaultLang('es');
+      this.translate.setDefaultLang('ga');
   		this.spanishFlag = './assets/img/lenguageFlags/SpanishFlag.png';
   		this.galicianFlag = './assets/img/lenguageFlags/GalicianFlag.png';
   		this.englishFlag = './assets/img/lenguageFlags/EnglishFlag.png';
   	}
 
     changeLenguage(params){
-      if (params == 0) { this.translate.setDefaultLang('es');};
-      if (params == 1) { this.translate.setDefaultLang('ga');};
+      if (params == 0) { this.translate.setDefaultLang('ga');};
+      if (params == 1) { this.translate.setDefaultLang('es');};
       if (params == 2) { this.translate.setDefaultLang('en');};
       //this.currentLang = this.translate.currentLang;
     }
