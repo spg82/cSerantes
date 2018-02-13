@@ -41,7 +41,7 @@ export class ContactComponent implements OnInit {
   		//if (form.$valid){
 	  		window.scrollTo(0, 0);
 	  		this.mailService.sendEmail(form).subscribe(res => {
-		      console.log('Reservation Success', res);
+		      console.log('Message send!', res);
 		      if (res.status == 200){
 		      	/* Show popup with OK message */
 		      	this.modal_status = 'OK';

@@ -1,19 +1,38 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="assets/img/csobrin_logo.png" width="50px" height="50px" class="rounded-circle" style="border:2px solid white"></a>
+  <a class="navbar-brand" href="#"><img class="navbar-logo" src="assets/img/csobrin_logo2.png"></a>
+  <br>
+  <br>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: -80px">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['home']">Inicio</a>
+        <a class="nav-link" [routerLink]="['home']">{{ 'NAVBAR.HOME' | translate }}</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['gallery']">Galería</a>
+        <a class="nav-link" [routerLink]="['gallery']">{{ 'NAVBAR.GALLERY' | translate }}</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['contact']">Contacto</a>
+        <a class="nav-link" [routerLink]="['contact']">{{ 'NAVBAR.CONTACT' | translate }}</a>
       </li>
+      <!-- <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['login']">Login</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['image/add']">Add image</a>
+      </li> -->
     </ul>
+    <div class="lenguageIcons">
+      <a (click)=changeLenguage(0) title="Español">
+        <img class="flagIcon" [src]='spanishFlag'/>
+      </a>
+      <a (click)=changeLenguage(1) title="Galego">
+        <img class="flagIcon" [src]='galicianFlag'/>
+      </a>
+      <a (click)=changeLenguage(2) title="English">
+        <img class="flagIcon" [src]='englishFlag'/>
+      </a>
+    </div>
   </div>
 </nav>

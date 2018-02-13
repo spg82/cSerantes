@@ -13,6 +13,14 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
+//Translate module
+import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
+
+//import { RecaptchaModule } from 'ng2-recaptcha';
+
+// Cookie law banner
+import { CookieLawModule } from 'angular2-cookie-law';
+
 import { ImagePipe } from './pipes/image.pipe';
 
 import { AppComponent } from './app.component';
@@ -46,6 +54,10 @@ export const firebaseConfig = {
   messagingSenderId: "609631895794"
 };
 
+export function httpFactory(http: Http){
+  return new TranslateStaticLoader(http, './assets/translate', '.json');
+}
+
 
 @NgModule({
   declarations: [
@@ -78,6 +90,13 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    CookieLawModule,
+    //RecaptchaModule.forRoot(),
+    TranslateModule.forRoot({
+      provide: TranslateLoader,
+      useFactory: httpFactory,
+      deps: [Http]
+    }),
   ],
   providers: [MailService, ImagesService, ImageService, AuthService, AuthGuardService],
   bootstrap: [AppComponent]

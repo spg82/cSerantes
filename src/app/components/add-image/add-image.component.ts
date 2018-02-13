@@ -11,6 +11,7 @@ export class AddImageComponent implements OnInit {
 
 	category:any = {};
 	files: any;
+  img: any;
 	categories = [
 		{'title':'Cierres','value':'closures'},
 		{'title':'Cubiertas','value':'covering'},
@@ -27,21 +28,36 @@ export class AddImageComponent implements OnInit {
               private upload:ImageService) { }
 
   onChange(event) {
-    var files = event.srcElement.files;
-    this.files = files;
-    console.log(files);
+    // console.log(event.target);
+    // var files = event.srcElement.files;
+    // this.files = files;
+    // console.log(files);
+    let reader = new FileReader();
+    if(event.target.files && event.target.files.length > 0) {
+      let file = event.target.files[0];
+      reader.readAsDataURL(file);
+      reader.onload = () =>{        
+        this.img = {
+          name: file.name,
+          filetype: file.type,
+          value: reader.result.split(',')[1]
+        }
+      }
+    }
   }
 
   uploadImage(){
-  	var url = "./assets/img/gallery/" + this.category.value + "/" + this.files[0].name;
+    console.log(this.img);
+  	var url = "./assets/img/gallery/" + this.category.value + "/" + this.img.name;
   	var node = {
   		"id":200,
   		"category":this.category.value,
-  		"filename":this.files[0].name,
-  		"url": url
+  		"filename":this.img.name,
+  		"url": url,
+      "file":this.img
   	}
-  	this.image.addImage(node);
-
+  	//this.image.addImage(node);
+    console.log(node);
     this.upload.uploadFile(node).subscribe(res => {
           console.log('Reservation Success', res);
           if (res.status == 200){

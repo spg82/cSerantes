@@ -1,0 +1,60 @@
+{
+	"NAVBAR":{
+		"HOME":"Inicio",
+		"GALLERY":"Galería",
+		"CONTACT":"Contacto"
+	},
+	"HOME":{
+		"P1":"Con una experiencia de algo más de 12 años en dos empresas de Promoción y Construcción de Ferrolterra. En junio del año 2002 nos establecemos por nuestra cuenta, contando por tanto con una experiencia total de 28 años en el sector.",
+		"P2":"Con un desarrollo moderado y paulatino pero de consolidación, se afianza en segmentos del interiorismo, construcción,  instalaciones y viviendas unifamiliares llave en mano. Estamos especializados en reformas, obras civiles y servicios a particulares, instalaciones comerciales  y empresas.",
+		"P3":"Nuestras “empresas hermanas” nos permiten ofrecer el llave en mano sin gastos añadidos, (estudio de arquitectura, electricidad, fontanería, calefacción, pinturas, pladur, aislamientos, etc.)  así como un plazo de ejecución cerrado.",
+		"P4":"También realizamos obras para Concellos, Xunta de Galicia y otras instituciones de carácter público y privado.",
+		"P5":"Disponemos de un amplio almacén de más de 350m2 así como de un parque móvil de maquinaria y herramientas que nos hacen muy competitivos al no necesitar de los alquileres de maquinaria. La experiencia, conocimiento, seriedad y trato amable avalan nuestros trabajos.",
+		"P6":"La satisfacción de nuestros clientes es nuestra mejor publicidad.",
+		"P7":"Buscamos una buena relación calidad/precio para cada trabajo, que nos asegure clientela y recomendación por el boca a boca.",
+		"P8":"Las soluciones aportadas a los trabajos solicitados y las muestras de agradecimiento que recibimos son nuestros mayores logros y conquistas.",
+		"P9":"Atención personalizada",
+		"P10":"Dispondrá dun técnico para atender as súas dubidas e ofrecerlle un trato persoal durante a execución da súa obra. Estamos á o seu servizo.",
+		"P11":"Traballo en Equipo",
+		"P12":"Cooperamos activamente cos demáis axentes intervintes no proceso constructivo, aportando o noso gran de arena para alcanzar un obxectivo común: a satisfacción do cliente e a garantía do traballo ben executado.",
+		"P13":"Seguimento do proceso constructivo",
+		"P14":"A transparencia é o nosa abanderada. Poñemos á súa disposición un servizo que lle permitirá un seguimento completo da execución dos traballos.",
+		"P15":"Solvencia e competitividad",
+		"P16":"A calidade e o bó servizo non están reñidos có prezo. Optimizamos os nosos costes para presentar presupostos altamente competitivos a os nosos clientes. Compróeo vostede mesmo."
+	},
+	"GALLERY":{
+		"FINISHES":"Acabados",
+		"FINISHES_TITLE":"Acabados",
+		"CLOSURES":"Peches",
+		"CLOSURES_TITLE":"Peches",
+		"COVERING":"Cubertas",
+		"COVERING_TITLE":"Cubertas",
+		"FRONTAGES":"Fachadas",
+		"FRONTAGES_TITLE":"Fachadas",
+		"WOOD_COVERS":"Cubertas de madera",
+		"WOOD_COVERS_TITLE":"Cubertas de madera",
+		"STRUCTURES":"Estructuras",
+		"STRUCTURES_TITLE":"Estructuras",
+		"INSTALLATIONS":"Instalacións",
+		"INSTALLATIONS_TITLE":"Instalacións",
+		"POOLS":"Piscinas",
+		"POOLS_TITLE":"Piscinas",
+		"LIVINGS":"Vivendas unif. chave en mano",
+		"LIVINGS_TITLE":"Vivendas unif. chave en mano"
+	},
+	"CONTACT":{
+		"TITLE":"Contacto",
+		"NAME":"Nome",
+		"EMAIL":"Email",
+		"MESSAGE":"Mesaxe",
+		"SEND":"Enviar",
+		"OTHER_TEXT":"Tamén pode poñerse en contacto con nos das seguintes maneiras:",
+		"PHONE":"Teléfono: "
+	},
+	"COOKIELAWTEXT":{
+        "TEXT":"Esta página web utiliza cookies propias y de terceros. Lea mas sobre la política de cookies: "
+    },
+    "FOOTER":{
+    	"LEGAL":"Aviso legal e condicións de uso"
+    }
+}

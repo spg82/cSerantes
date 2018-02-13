@@ -1,19 +1,23 @@
 <div class="footer fixed-footer bg-dark">
  	<div class="row contactFooter" style="color:white;">
-		<address class="col-md-6" style="margin-left:20px">
-			<b><i><u>Construcciones Sobrín</u></i></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Estrada do Raposeiro, 16 baixo.
-			Ferrol, Galicia
-		</address>
-		<div class="col-md-1 offset-md-4">
-           <span style="font-size:18px">
-           		<a href="https://es-es.facebook.com/miguelsobrinsueiras/" style="color:white">
-           			<i class="fa fa-facebook" style="margin-right: 10px;"></i>
-           		</a>           		
-				<a href="mailto:miguelsobrinsueiras@gmail.com" style="color:white">
-          			<i class="fa fa-envelope"></i> 
-          		</a>
-       		</span>
-		</div>
+ 		<div class="col-md-12">
+			<address style="margin-left:20px">
+				<b><i><u>Construcciones Sobrín</u></i></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Estrada do Raposeiro, 16 baixo.
+				Ferrol, Galicia
+				&nbsp;&nbsp;-&nbsp;&nbsp;
+				659 317 805
+				&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="text-white" [routerLink]="['legal']" target="_blank">{{ 'FOOTER.LEGAL' | translate }}</a>
+		       	<span class="pull-right social-media">
+		       		<a href="https://es-es.facebook.com/miguelsobrinsueiras/">
+		       			<i class="fa fa-facebook"></i>
+		       		</a>
+					<a href="mailto:miguelsobrinsueiras@gmail.com">
+		      			<i class="fa fa-envelope"></i> 
+		      		</a>
+		   		</span>
+	   		</address>
+	   	</div>
 	</div>
 </div>  

@@ -1,0 +1,60 @@
+{
+	"NAVBAR":{
+		"HOME":"Inicio",
+		"GALLERY":"Gallery",
+		"CONTACT":"Contact"
+	},
+	"HOME":{
+		"P1":"",
+		"P2":"",
+		"P3":"",
+		"P4":"",
+		"P5":"",
+		"P6":"",
+		"P7":"",
+		"P8":"",
+		"P9":"",
+		"P10":"",
+		"P11":"",
+		"P12":"",
+		"P13":"",
+		"P14":"",
+		"P15":"",
+		"P16":""
+	},
+	"GALLERY":{
+		"FINISHES":"Finishes",
+		"FINISHES_TITLE":"Finishes",
+		"CLOSURES":"Closures",
+		"CLOSURES_TITLE":"Closures",
+		"COVERING":"Covering",
+		"COVERING_TITLE":"Covering",
+		"FRONTAGES":"Frontages",
+		"FRONTAGES_TITLE":"Frontages",
+		"WOOD_COVERS":"Wood covers",
+		"WOOD_COVERS_TITLE":"Wood covers",
+		"STRUCTURES":"Structures",
+		"STRUCTURES_TITLE":"Structures",
+		"INSTALLATIONS":"Installations",
+		"INSTALLATIONS_TITLE":"Installations",
+		"POOLS":"Pools",
+		"POOLS_TITLE":"Pools",
+		"LIVINGS":"Livings",
+		"LIVINGS_TITLE":"Livings"
+	},
+	"CONTACT":{
+		"TITLE":"Contact",
+		"NAME":"Name",
+		"EMAIL":"Email",
+		"MESSAGE":"Message",
+		"SEND":"Send",
+		"OTHER_TEXT":"You can also contact us by the following ways:",
+		"PHONE":"Phone: +34 "
+	},
+	"COOKIELAWTEXT":{
+        "TEXT":"Esta página web utiliza cookies propias y de terceros. Lea mas sobre la política de cookies: "
+    },
+    "FOOTER":{
+    	"LEGAL":"Legal warning/terms and conditions"
+    }
+}

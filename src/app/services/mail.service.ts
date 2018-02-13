@@ -17,7 +17,7 @@ export interface IMessage {
  
 @Injectable()
 export class MailService {
-  private emailUrl = '/assets/email.php';
+  private emailUrl = './assets/email.php';
  
   constructor(private http: Http) {
  
