@@ -16,6 +16,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 //Translate module
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 //import { RecaptchaModule } from 'ng2-recaptcha';
 
@@ -100,7 +101,7 @@ export function httpFactory(http: Http){
       deps: [Http]
     }),
   ],
-  providers: [MailService, ImagesService, ImageService, AuthService, AuthGuardService],
+  providers: [MailService, ImagesService, ImageService, AuthService, AuthGuardService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

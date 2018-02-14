@@ -14,7 +14,7 @@ if(empty($errors))
  	$from_email = $request->email;
 	$comments = $request->comments;
  
-	$to_email = "rrvn10@gmail.com";
+	$to_email = "miguelsobrinsueiras@gmail.com";
  
 	$contact = "<p><strong>Nombre:</strong> $from_name</p>
 				<p><strong>Email:</strong> $from_email</p>";
