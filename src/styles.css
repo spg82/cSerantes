@@ -77,7 +77,6 @@ p, label, h1, h2, h3, h4, h5, h6{
   background-color: #397b9c !important;
 }
 
-
 .nav-link {
   font-family: 'Roboto-Medium';
   color: #5d5d5d;
@@ -131,19 +130,13 @@ p, label, h1, h2, h3, h4, h5, h6{
 
 @media screen and (max-width: 992px){
 	.nav-link{
-		font-size: 16px;
+		font-size: 20px;
 	}
 }
 
-@media screen and (max-width: 882px){
+@media screen and (max-width: 768px){
 	.nav-link{
 		font-size: 14px;
-	}
-}
-
-@media screen and (max-width: 800px){
-	.nav-link{
-		font-size: 13px;
 	}
 }
 
