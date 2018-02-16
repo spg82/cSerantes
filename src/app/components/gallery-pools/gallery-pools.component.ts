@@ -15,6 +15,19 @@ export class GalleryPoolsComponent implements OnInit {
     this.images = image.getAllImages();
   }
 
+    // image.getAllImages()
+    // 	.subscribe((img: any) =>{
+    // 		this.images = img;
+    // 		for (var i=0; i<this.images.length; i++){
+    // 			if (this.images[i].file !== undefined){
+    // 				console.log(this.images[i]);
+    // 				this.images[i].file = 'data:image/png;base64,' + this.images[i].file;
+    // 				console.log(this.images[i]);
+    // 			}
+    // 		}
+    // })
+
+
   ngOnInit() {
   }
 }

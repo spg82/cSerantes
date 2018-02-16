@@ -9,6 +9,7 @@ import { ImagesService } from '../../services/images.service';
 export class GalleryComponent implements OnInit {
 
 	images: any;
+	test: any;
 
 	constructor(private image:ImagesService) {
 		this.images = image.getAllImages();

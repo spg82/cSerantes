@@ -11,10 +11,38 @@ export class AdminPageComponent implements OnInit {
 
   	images: any;
   	selectedImages = [];
+    test: any;
 
   	constructor(private image:ImagesService, private router:Router) {
-  		this.images = image.getAllImages();
+  		//this.images = image.getAllImages();
+      image.getAllImages()
+      .subscribe((img: any) =>{
+        this.images = img;
+      });
+      
+      //let base64 = this.getBase64Image(document.getElementById("img0"));
+      //console.log(base64);
   	}
+
+    getBase64Image() {
+      for (var i=0; i<134; i++){
+        var elem = document.createElement("img");
+        let ttt = document.getElementById("placehere");
+        console.log(ttt);
+        document.getElementById("placehere").appendChild(elem);
+        elem.src = this.images[i].url;
+        console.log(elem);
+        var canvas = document.createElement("canvas");
+        canvas.width = elem.width;
+        canvas.height = elem.height;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(elem, 0, 0);
+        var dataURL = canvas.toDataURL("image/png");
+        this.image.addImagesBase(this.images[i], dataURL);
+      }
+    }
+
+    
 
   	ngOnInit() {
   	}

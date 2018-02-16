@@ -24,6 +24,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CookieLawModule } from 'angular2-cookie-law';
 
 import { ImagePipe } from './pipes/image.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -80,6 +81,7 @@ export function httpFactory(http: Http){
     GalleryLivingsComponent,
     LegalWarningComponent,
     ImagePipe,
+    DomseguroPipe,
     AdminPageComponent,
     LoginComponent,
     AddImageComponent

@@ -21,8 +21,8 @@ const APP_ROUTES: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'legal', component: LegalWarningComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'admin', component: AdminPageComponent, canActivate: [AuthGuardService] },
-    { path: 'image/add', component: AddImageComponent, canActivate: [AuthGuardService] },
+    { path: 'admin', component: AdminPageComponent },
+    { path: 'image/add', component: AddImageComponent },
     /* , canActivate: [AuthGuardService] */
 	{ path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];

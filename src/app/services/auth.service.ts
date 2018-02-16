@@ -20,13 +20,13 @@ export class AuthService {
 	login(formData){
 		this.af.auth.signInWithEmailAndPassword(formData.value.email, formData.value.password).then(
 	    (success) => {
-	    console.log(success);
+	    //console.log(success);
 	    this.authenticated = true;
 	    this.router.navigate(['/admin']);
 	  }).catch(
 	    (err) => {
 	    this.authenticated = false;
-	    console.log(err);
+	    //console.log(err);
 	    this.error = err;
 	  })
 	}

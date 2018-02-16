@@ -403,7 +403,10 @@ textarea
 
 .cookie-law .cookie-law-wrapper .dismiss{
   top: -9px !important;
-  fill: white !important;
+}
+
+.cookie-law .cookie-law-wrapper .dismiss svg{
+   fill: white !important; 
 }
 
 @media screen and (max-width: 1100px){

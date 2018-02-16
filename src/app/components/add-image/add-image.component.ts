@@ -35,6 +35,7 @@ export class AddImageComponent implements OnInit {
     let reader = new FileReader();
     if(event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
+      console.log(file);
       reader.readAsDataURL(file);
       reader.onload = () =>{        
         this.img = {
@@ -47,25 +48,25 @@ export class AddImageComponent implements OnInit {
   }
 
   uploadImage(){
-    console.log(this.img);
+    //console.log(this.img);
   	var url = "./assets/img/gallery/" + this.category.value + "/" + this.img.name;
   	var node = {
   		"id":200,
   		"category":this.category.value,
   		"filename":this.img.name,
   		"url": url,
-      "file":this.img
+      "file":this.img.value
   	}
-  	//this.image.addImage(node);
-    console.log(node);
-    this.upload.uploadFile(node).subscribe(res => {
-          console.log('Reservation Success', res);
-          if (res.status == 200){
-            console.log("SUCCESS");                 
-          }
-        }, error => {
-           console.log("ERROR"); 
-        });
+  	this.image.addImage(node);
+    //console.log(node);
+    // this.upload.uploadFile(node).subscribe(res => {
+    //       console.log('Reservation Success', res);
+    //       if (res.status == 200){
+    //         console.log("SUCCESS");                 
+    //       }
+    //     }, error => {
+    //        console.log("ERROR"); 
+    //     });
   }
 
   ngOnInit() {

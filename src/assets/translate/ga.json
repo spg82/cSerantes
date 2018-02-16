@@ -5,14 +5,14 @@
 		"CONTACT":"Contacto"
 	},
 	"HOME":{
-		"P1": "Con pouco máis de 12 anos de experiencia en dúas empresas de Promoción e Construción de Ferrolterra, en xuño de 2002 establecéronse, cunha experiencia total de 28 anos no sector." ,
-		"P2": "Cun desenvolvemento moderado e gradual, pero a consolidación é ancorado nos segmentos de deseño de interiores, construción, instalacións e casas turnkey Somos especializados en reformas, obras civís e servizos a particulares, instalacións comerciais e empresas." ,
-		"P3": "As nosas 'compañías irmás' permítennos ofrecer a chave na man sen gastos adicionais (arquitectura, electricidade, fontanería, calefacción, pinturas, xeso, illamento, etc.) e un prazo pechado." ,
+		"P1": "Con pouco máis de 12 anos de experiencia en dúas empresas de Promoción e Construción de Ferrolterra, en xuño de 2002 establecémonos por contra propia, cunha experiencia total de 28 anos no sector." ,
+		"P2": "Cun desenvolvemento moderado e gradual, consolidámonos en segmentos de deseño de interiores, construción, instalacións e vivendas unifamiliares chave en man. Somos especialistas en reformas, obras civís, servizos a particulares, instalacións comerciais e empresas." ,
+		"P3": "As nosas 'compañías irmás' permítennos ofrecer a chave na man sen gastos adicionais (estudo de arquitectura, electricidade, fontanería, calefacción, pinturas, xeso, cociñas, carpinterías, etc.) e un prazo de execución pechado." ,
 		"P4": "Tamén levamos a cabo traballos para Concellos, Xunta de Galicia e outras institucións públicas e privadas.",
-		"P5": "Temos un gran almacén de máis de 350m2, así como unha flota móbil de maquinaria e ferramentas que nos fan moi competitivos cando non necesitamos aluguer de maquinaria, experiencia, coñecemento, seriedade e trato amable garantindo o noso traballo.",
+		"P5": "Temos un gran almacén de máis de 350m2, así como unha flota móbil de maquinaria e ferramentas que nos fan moi competitivos cando non necesitamos aluguer de maquinaria. A experiencia, o coñecemento, a seriedade e un trato amable avalan noso traballo.",
 		"P6": "A satisfacción dos nosos clientes é a nosa mellor publicidade.",
-		"P7": "Buscamos unha boa relación calidade / prezo para cada traballo, que nos asegura dunha clientela e recomendación por boca a boca.",
-		"P8": "As solucións proporcionadas ao traballo solicitado e as mostras de gratitude que recibimos son os nosos maiores logros e logros.",
+		"P7": "Buscamos unha boa relación calidade / prezo para cada traballo, o que garante unha clientela e recomendación polo boca a boca.",
+		"P8": "As solucións proporcionadas ao traballo solicitado e as mostras de gratitude que recibimos son os nosos maiores logros e conquistas.",
 		"P9": "Atención personalizada",
 		"P10": "Terá un técnico para responder ás súas preguntas e ofrecerlle un tratamento persoal durante a execución do seu traballo. Estamos ao seu servizo.",
 		"P11": "Traballo en equipo",
@@ -39,14 +39,14 @@
 		"INSTALLATIONS_TITLE":"Instalacións",
 		"POOLS":"Piscinas",
 		"POOLS_TITLE":"Piscinas",
-		"LIVINGS":"Vivendas unif. chave en mano",
-		"LIVINGS_TITLE":"Vivendas unif. chave en mano"
+		"LIVINGS":"Vivendas unif. chave en man",
+		"LIVINGS_TITLE":"Vivendas unif. chave en man"
 	},
 	"CONTACT":{
 		"TITLE":"Contacto",
 		"NAME":"Nome",
 		"EMAIL":"Email",
-		"MESSAGE":"Mesaxe",
+		"MESSAGE":"Mensaxe",
 		"SEND":"Enviar",
 		"OTHER_TEXT":"Tamén pode poñerse en contacto con nos das seguintes maneiras:",
 		"PHONE":"Teléfono: "

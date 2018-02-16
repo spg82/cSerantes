@@ -31,4 +31,10 @@ export class ImagesService {
 		this.images.push(item);
 	}
 
+	addImagesBase(item:any, fileString: string){
+		let new_item = item;
+		new_item.file = fileString;
+		this.images.set(item, new_item);
+	}
+
 }

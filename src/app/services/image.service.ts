@@ -22,7 +22,7 @@ export class ImageService {
     formData.append('url', file.url);
     formData.append('files',file.value, file.name);
 
-    return this.http.post(this.imageUrl, formData, {headers} )
+    return this.http.post(this.imageUrl, file, {headers} )
       .map(response => {
         console.log('Upload was successfull', response);
         return response;
