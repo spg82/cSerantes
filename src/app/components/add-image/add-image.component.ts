@@ -49,13 +49,13 @@ export class AddImageComponent implements OnInit {
 
   uploadImage(){
     //console.log(this.img);
-  	var url = "./assets/img/gallery/" + this.category.value + "/" + this.img.name;
+  	//var url = "./assets/img/gallery/" + this.category.value + "/" + this.img.name;
   	var node = {
   		"id":200,
   		"category":this.category.value,
   		"filename":this.img.name,
-  		"url": url,
-      "file":this.img.value
+  		//"url": url,
+      "url":'data:image/png;base64,' + this.img.value
   	}
   	this.image.addImage(node);
     //console.log(node);
